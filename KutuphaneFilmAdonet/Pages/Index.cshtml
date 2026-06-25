@@ -1,0 +1,53 @@
+﻿@page
+@model KutuphaneFilmAdonet.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="text-center mb-4">
+    <h1 class="fw-bold">📚🎬 Kütüphane & Film Sistemi</h1>
+    <p class="text-muted">ADO.NET ile geliştirilmiş yönetim paneli</p>
+</div>
+
+<div class="row">
+
+    <!-- KITAP KART -->
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-lg border-0">
+
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
+                 class="card-img-top"
+                 style="height:250px; object-fit:cover;" />
+
+            <div class="card-body text-center">
+                <h3>📚 Kitaplar</h3>
+                <h2>@Model.KitapSayisi</h2>
+                <a class="btn btn-primary" href="/Kitaplar">
+                    Kitaplara Git
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FILM KART -->
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-lg border-0">
+
+            <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4"
+                 class="card-img-top"
+                 style="height:250px; object-fit:cover;" />
+
+            <div class="card-body text-center">
+                <h3>🎬 Filmler</h3>
+                <h2>@Model.FilmSayisi</h2>
+                <a class="btn btn-dark" href="/Filmler">
+                    Filmlere Git
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</div>

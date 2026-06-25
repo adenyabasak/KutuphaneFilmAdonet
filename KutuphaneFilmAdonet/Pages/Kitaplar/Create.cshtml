@@ -1,0 +1,27 @@
+﻿@page
+@model KutuphaneFilmAdonet.Pages.Kitaplar.CreateModel
+
+<h2>Kitap Ekle</h2>
+
+<form method="post">
+
+    <div>
+        <label>Kitap Adı</label><br />
+        <input asp-for="Kitap.KitapAdi" />
+    </div>
+
+    <div>
+        <label>Yazar</label><br />
+        <input asp-for="Kitap.Yazar" />
+    </div>
+
+    <div>
+        <label>Sayfa Sayısı</label><br />
+        <input asp-for="Kitap.SayfaSayisi" />
+    </div>
+
+    <br />
+
+    <button type="submit">Kaydet</button>
+
+</form>

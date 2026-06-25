@@ -1,0 +1,29 @@
+﻿@page
+@model KutuphaneFilmAdonet.Pages.Filmler.EditModel
+
+<h2>Film Güncelle</h2>
+
+<form method="post">
+
+    <input type="hidden" asp-for="Film.FilmId" />
+
+    <div>
+        <label>Film Adı</label>
+        <input asp-for="Film.FilmAdi" />
+    </div>
+
+    <div>
+        <label>Yönetmen</label>
+        <input asp-for="Film.Yonetmen" />
+    </div>
+
+    <div>
+        <label>Süre</label>
+        <input asp-for="Film.Sure" />
+    </div>
+
+    <br />
+
+    <button class="btn btn-warning">Güncelle</button>
+
+</form>
